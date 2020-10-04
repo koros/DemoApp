@@ -23,3 +23,20 @@ Navigate to localhost:8080 on your browser just to make sure the web server is u
 ```
 http://localhost:8080/
 ```
+<p align="center">
+  <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.08.58.png" height="280" alt="accessibility text">
+</p>
+
+To test the transactions api obtain the JWT token by making a `POST` request to http://localhost:8080/authenticate with the following params 
+```
+{
+    "username" : "user", 
+    "password" : "password"
+}
+```
+<p align="center">
+  <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.28.31.png" height="280" alt="accessibility text">
+</p>
+
+
+
