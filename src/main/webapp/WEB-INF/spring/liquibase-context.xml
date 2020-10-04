@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <import resource="hibernate-context.xml"/>
+
+    <!-- liquibase configuration -->
+    <bean id="liquibase" class="liquibase.integration.spring.SpringLiquibase">
+        <property name="changeLog" value="classpath:config/liquibase/master.xml" />
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+</beans>
