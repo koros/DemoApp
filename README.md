@@ -23,7 +23,7 @@ Navigate to localhost:8080 on your browser just to make sure the web server is u
 ```
 http://localhost:8080/
 ```
-<p align="center">
+<p>
   <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.08.58.png" height="280" alt="accessibility text">
 </p>
 
@@ -34,9 +34,21 @@ To test the transactions api obtain the JWT token by making a `POST` request to 
     "password" : "password"
 }
 ```
-<p align="center">
+<p>
   <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.28.31.png" height="280" alt="accessibility text">
 </p>
 
+### List transactions API 
+Make a `GET` rquest to http://localhost:8080/api/transactions with an optinal parameter of `transaction_id` to filter the transactins by their id
+
+<p>
+  <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.40.31.png" height="280" alt="accessibility text">
+</p>
+
+By Transaction Id
+
+<p>
+  <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/bytransaction.png" height="280" alt="accessibility text">
+</p>
 
 
