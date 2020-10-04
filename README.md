@@ -23,9 +23,6 @@ Navigate to localhost:8080 on your browser just to make sure the web server is u
 ```
 http://localhost:8080/
 ```
-<p>
-  <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.08.58.png" height="280" alt="accessibility text">
-</p>
 
 To test the transactions api obtain the JWT token by making a `POST` request to http://localhost:8080/authenticate with the following params 
 ```
@@ -45,7 +42,7 @@ Make a `GET` rquest to http://localhost:8080/api/transactions with an optinal pa
   <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/Screenshot+2020-10-04+at+21.40.31.png" height="280" alt="accessibility text">
 </p>
 
-By Transaction Id
+By Transaction Id `GET` http://localhost:8080/api/transactions?transaction_id=e69c0f86-86c8-423b-8fcb-071cbd957997
 
 <p>
   <img src="https://kot-ptracker.s3.eu-central-1.amazonaws.com/bytransaction.png" height="280" alt="accessibility text">
