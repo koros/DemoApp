@@ -4,8 +4,9 @@ import com.koros.demoapp.dto.Transaction;
 import com.koros.demoapp.service.TransactionService;
 
 
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -18,6 +19,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.ArgumentMatchers.any;
 
+@RunWith(MockitoJUnitRunner.class)
 public class TransactionControllerTest {
 
     @Mock
@@ -25,7 +27,7 @@ public class TransactionControllerTest {
 
     TransactionController transactionController;
 
-    @BeforeEach
+    @Before
     public void setup(){
         transactionService = Mockito.mock(TransactionService.class);
         transactionController = new TransactionController(transactionService);
