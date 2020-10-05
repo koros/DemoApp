@@ -14,6 +14,11 @@ The demo project uses maevn build tool so after you clone the project and cd to 
 mvn clean install
 ```
 
+To run all the tests run
+```
+mvn test
+```
+
 The project is configured to use an embeded jetty web server plugin so run
 ```
 mvn jetty:run
